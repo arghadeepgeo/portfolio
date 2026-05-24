@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/argha-portfolio/',
+  base: '/portfolio/',
   optimizeDeps: {
     include: ['react-router', 'react-router-dom'],
   },

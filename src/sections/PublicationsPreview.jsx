@@ -100,7 +100,7 @@ export default function PublicationsPreview() {
           → Open the full archive <span style={{ color: 'var(--gold)' }}>/{pubStats.total}</span>
         </Link>
         <a
-          href="/argha-portfolio/Arghadeep-Bose-CV.pdf"
+          href="/portfolio/Arghadeep-Bose-CV.pdf"
           download
           style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--ink)', background: 'transparent', padding: '14px 22px', textDecoration: 'none', border: '1px solid var(--ink)', display: 'inline-flex', gap: 12, alignItems: 'center' }}
         >
