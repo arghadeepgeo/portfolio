@@ -57,7 +57,7 @@ export default function PublicationsPreview() {
           ))}
         </div>
         <p style={{ fontSize: 17, lineHeight: 1.55, color: 'var(--ink-2)', margin: 0 }}>
-          Indexed across Scopus, Web of Science and UGC-CARE listed journals. Reviewer for <em>Sustainable Cities and Society, Journal of Cleaner Production, GeoJournal,</em> and fifteen others. ORCiD <span className="mono" style={{ fontSize: 13 }}>0000-0002-3284-4633</span>.
+          Published in Scopus and Web of Science indexed journals. Actively serves as a peer reviewer for more than 50 international journals, including <em>Sustainable Cities and Society</em>, <em>Journal of Cleaner Production</em>, <em>Scientific Reports</em>, <em>PLOS ONE</em>, <em>Environmental Science and Pollution Research</em>, <em>Air Quality, Atmosphere & Health</em>, <em>GeoJournal</em>, <em>Gender Issues</em>, <em>Journal of Indian Society of Remote Sensing</em>, <em>Scientific African</em>, <em>Progress in Disaster Science</em>, <em>Sustainable Futures</em>, <em>Social Sciences & Humanities Open</em>, <em>Digital Applications in Archaeology and Cultural Heritage</em>, <em>The International Journal of Human Rights</em>, <em>Aerosol and Air Quality Research</em>, and others. ORCiD <span className="mono" style={{ fontSize: 13 }}>0000-0002-3284-4633</span>.
         </p>
       </div>
 
@@ -80,8 +80,14 @@ export default function PublicationsPreview() {
             onMouseLeave={e => { e.currentTarget.style.background = ''; e.currentTarget.style.paddingLeft = '0'; e.currentTarget.style.paddingRight = '0' }}
           >
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--muted)', letterSpacing: '0.1em' }}>- {String(pub.id).padStart(2, '0')}.</div>
-            <div style={{ fontFamily: 'var(--font-serif)', fontSize: 19, lineHeight: 1.32, fontWeight: 400, color: 'var(--ink)', fontVariationSettings: '"SOFT" 20' }} dangerouslySetInnerHTML={{ __html: pub.titleHtml }} />
-            <div style={{ fontFamily: 'var(--font-sans)', fontSize: '12.5px', color: 'var(--muted)', fontStyle: 'italic' }}>{pub.journal}</div>
+            <div style={{ fontFamily: 'var(--font-serif)', fontSize: 'var(--fs-title-md)', lineHeight: 1.32, fontWeight: 400, color: 'var(--ink)', fontVariationSettings: '"SOFT" 20' }}>
+              {pub.link ? (
+                <a href={pub.link} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', borderBottom: '1px dotted var(--ink-2)' }} dangerouslySetInnerHTML={{ __html: pub.titleHtml }} />
+              ) : (
+                <span dangerouslySetInnerHTML={{ __html: pub.titleHtml }} />
+              )}
+            </div>
+            <div style={{ fontFamily: 'var(--font-sans)', fontSize: 'var(--fs-title-sm)', color: 'var(--muted)', fontStyle: 'italic' }}>{pub.journal}</div>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 12, letterSpacing: '0.1em', textAlign: 'right', color: 'var(--ink)' }}>
               {pub.year}
               {pub.badges.includes('SCI') && (

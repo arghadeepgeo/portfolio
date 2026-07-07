@@ -21,7 +21,7 @@ export default function About() {
       <div className="sec-head">
         <div className="label">
           <span className="num" style={{ fontFamily: 'var(--font-serif)', fontSize: 36, fontWeight: 300, color: 'var(--ink)', letterSpacing: 0, fontVariationSettings: '"SOFT" 50' }}>01</span>
-          Profile · The Cartographer
+          Profile · The Urban Geographer
         </div>
         <h2>
           A scholar mapping the <span className="it">restless geographies</span> of an urbanising sub-continent.
@@ -34,7 +34,7 @@ export default function About() {
             <p
               key={i}
               style={{
-                fontSize: '18.5px', lineHeight: 1.55, color: 'var(--ink-2)', margin: '0 0 18px',
+                fontSize: 'var(--fs-body-lg)', lineHeight: 1.55, color: 'var(--ink-2)', margin: '0 0 18px',
                 ...(i === 0 ? { '--drop-cap': 1 } : {}),
               }}
               dangerouslySetInnerHTML={{ __html: p }}
@@ -69,9 +69,9 @@ export default function About() {
                 <dt style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--muted)', paddingTop: 3 }}>
                   {f.dt}
                 </dt>
-                <dd style={{ margin: 0, color: 'var(--ink)', fontFamily: 'var(--font-serif)', fontSize: 15, lineHeight: 1.4 }}>
+                <dd style={{ margin: 0, color: 'var(--ink)', fontFamily: 'var(--font-serif)', fontSize: 'var(--fs-body)', lineHeight: 1.4 }}>
                   {f.dd}
-                  {f.em && <em style={{ fontStyle: 'italic', color: 'var(--muted)', display: 'block', fontSize: '12.5px', marginTop: 2 }}>{f.em}</em>}
+                  {f.em && <em style={{ fontStyle: 'italic', color: 'var(--muted)', display: 'block', fontSize: 'var(--fs-detail)', marginTop: 2 }}>{f.em}</em>}
                 </dd>
               </div>
             ))}

@@ -52,13 +52,17 @@ function PubRow({ pub, index }) {
       <div style={{ fontFamily: 'var(--font-serif)', fontSize: 28, fontWeight: 400, color: 'var(--ink)', fontVariationSettings: '"SOFT" 50', lineHeight: 1 }}>
         {pub.shortYear}
       </div>
-      <div style={{ fontFamily: 'var(--font-serif)', fontSize: '19.5px', lineHeight: 1.32, fontWeight: 400, color: 'var(--ink)' }}>
+      <div style={{ fontFamily: 'var(--font-serif)', fontSize: 'var(--fs-title-md)', lineHeight: 1.32, fontWeight: 400, color: 'var(--ink)' }}>
         <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: 12, color: 'var(--muted)', fontStyle: 'normal', marginBottom: 6, letterSpacing: '0.01em' }}>
           {formatAuthors(pub.authors)}
         </span>
-        <span dangerouslySetInnerHTML={{ __html: pub.titleHtml }} />
+        {pub.link ? (
+          <a href={pub.link} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', borderBottom: '1px dotted var(--ink-2)' }} dangerouslySetInnerHTML={{ __html: pub.titleHtml }} />
+        ) : (
+          <span dangerouslySetInnerHTML={{ __html: pub.titleHtml }} />
+        )}
       </div>
-      <div style={{ fontFamily: 'var(--font-sans)', fontSize: '12.5px', color: 'var(--muted)', fontStyle: 'italic', lineHeight: 1.45 }}>
+      <div style={{ fontFamily: 'var(--font-sans)', fontSize: 'var(--fs-title-sm)', color: 'var(--muted)', fontStyle: 'italic', lineHeight: 1.45 }}>
         {pub.journal}
         {pub.issn && <span style={{ display: 'block', fontStyle: 'normal', fontFamily: 'var(--font-mono)', fontSize: '9.5px', letterSpacing: '0.1em', marginTop: 4, color: 'var(--ink)' }}>{pub.issn}</span>}
       </div>

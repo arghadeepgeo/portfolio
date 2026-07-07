@@ -80,7 +80,7 @@ export default function Hero() {
               </span>
               <span style={{ flex: 1, height: 1, background: 'var(--accent)', opacity: 0.35 }} />
             </div>
-            <p style={{ fontSize: '17px', lineHeight: 1.65, color: 'var(--ink-2)', margin: 0, borderLeft: '2px solid var(--accent)', paddingLeft: 18 }}>
+            <p style={{ fontSize: 'var(--fs-tagline)', lineHeight: 1.65, color: 'var(--ink-2)', margin: 0, borderLeft: '2px solid var(--accent)', paddingLeft: 18 }}>
               Geographer, urbanist and educator working at the intersection of{' '}
               <em>remote sensing</em>, air-quality science, and the lived realities of South Asian cities.
               Currently Assistant Professor at The Assam Royal Global University.
@@ -95,7 +95,7 @@ export default function Hero() {
                   className="hero-kpi"
                   style={{ borderTop: '1px solid var(--rule)', paddingTop: 10, flex: 1, paddingRight: 16 }}
                 >
-                  <div className="kpi-value" style={{ fontFamily: 'var(--font-serif)', fontSize: 36, fontWeight: 400, lineHeight: 1, fontVariationSettings: '"SOFT" 50' }}>
+                  <div className="kpi-value" style={{ fontFamily: 'var(--font-serif)', fontSize: 'var(--fs-kpi-val)', fontWeight: 400, lineHeight: 1, fontVariationSettings: '"SOFT" 50' }}>
                     {kpi.value}
                   </div>
                   <div style={{ fontFamily: 'var(--font-mono)', fontSize: '9.5px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--muted)', marginTop: 6 }}>
@@ -109,13 +109,22 @@ export default function Hero() {
       </div>
 
       {/* Right column - portrait */}
-      <div className="portrait-wrap" style={{ position: 'relative', zIndex: 2 }}>
+      <div className="portrait-wrap" style={{
+        position: 'relative',
+        zIndex: 2,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+      }}>
         <div style={{
           position: 'relative',
           border: '1px solid var(--ink)',
           background: 'var(--paper-2)',
           aspectRatio: '4/5',
           overflow: 'hidden',
+          width: '100%',
+          maxHeight: 'min(70vh, 680px)',
         }}>
           {/* Crosshairs */}
           {['tl', 'tr', 'bl', 'br'].map(pos => (

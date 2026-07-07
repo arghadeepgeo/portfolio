@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from './context/ThemeContext'
 import PageFrame from './components/layout/PageFrame'
 import NoiseOverlay from './components/layout/NoiseOverlay'
+import FloatingActions from './components/layout/FloatingActions'
 import PortfolioPage from './pages/PortfolioPage'
 import PublicationsPage from './pages/PublicationsPage'
 
@@ -25,6 +26,7 @@ export default function App() {
         <NoiseOverlay />
         <PageFrame />
         <AnimatedRoutes />
+        <FloatingActions />
       </ThemeProvider>
     </HashRouter>
   )

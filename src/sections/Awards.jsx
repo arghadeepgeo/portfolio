@@ -21,7 +21,7 @@ export default function Awards() {
     <section id="awards" ref={section} className="section-base">
       <div className="sec-head">
         <div className="label">
-          <span className="num" style={{ fontFamily: 'var(--font-serif)', fontSize: 36, fontWeight: 300, color: 'var(--ink)', letterSpacing: 0, fontVariationSettings: '"SOFT" 50' }}>05</span>
+          <span className="num" style={{ fontFamily: 'var(--font-serif)', fontSize: 36, fontWeight: 300, color: 'var(--ink)', letterSpacing: 0, fontVariationSettings: '"SOFT" 50' }}>08</span>
           Honours &amp; Awards
         </div>
         <h2>A short list of the times the <span className="it">work was acknowledged.</span></h2>
@@ -48,10 +48,10 @@ export default function Awards() {
               {award.ribbon}
             </div>
             <h4
-              style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 26, lineHeight: 1.12, margin: '14px 0 10px', fontVariationSettings: '"SOFT" 30, "WONK" 1', letterSpacing: '-0.01em' }}
+              style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 'var(--fs-title-xl)', lineHeight: 1.12, margin: '14px 0 10px', fontVariationSettings: '"SOFT" 30, "WONK" 1', letterSpacing: '-0.01em' }}
               dangerouslySetInnerHTML={{ __html: award.titleHtml }}
             />
-            <p style={{ fontFamily: 'var(--font-sans)', fontSize: 13, color: 'var(--muted)', lineHeight: 1.5, margin: 0 }}>
+            <p style={{ fontFamily: 'var(--font-sans)', fontSize: 'var(--fs-detail)', color: 'var(--muted)', lineHeight: 1.5, margin: 0 }}>
               {award.desc}
             </p>
             <span style={{ position: 'absolute', top: 18, right: 22, fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--ink)' }}>

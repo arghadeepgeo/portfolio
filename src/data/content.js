@@ -6,8 +6,8 @@ export const heroData = {
   ],
   kpis: [
     { value: "24+", label: "Scopus Papers" },
-    { value: "21", label: "h-index" },
-    { value: "1,938", label: "Citations" },
+    { value: "22", label: "h-index" },
+    { value: "2,018", label: "Citations" },
     { value: "06", label: "Book Chapters" },
   ],
   tagline:
@@ -18,7 +18,7 @@ export const heroData = {
 export const aboutData = {
   paragraphs: [
     "Dr. Arghadeep Bose is a geographer whose work asks how cities breathe, sprawl, and bear the weight of their inhabitants. Trained at the University of North Bengal - where he earned a gold medal in his Master's and completed his Ph.D. in 2024 - his scholarship moves fluidly between satellite pixels and street-level field notes.",
-    "His doctoral and post-doctoral work has measured Siliguri's PM₂.₅ haze, simulated the Markov-chain march of Delhi's edges, and listened to the lives of the urban homeless. Today he teaches at The Assam Royal Global University, training the next generation in spatial reasoning.",
+    "His doctoral research examined urban environmental change through geospatial technologies, encompassing air quality modelling, urban expansion, and spatial analysis. His broader research extends to urban sustainability, environmental modelling, geospatial analytics, and the lived experiences of marginalized communities. Today, he serves as Assistant Professor at The Assam Royal Global University, where he teaches and mentors students in geography, GIS, spatial as well as critical thinking.",
   ],
   facts: [
     {
@@ -182,3 +182,83 @@ export const contactData = {
   researcherId: "AAT-2766-2021",
   scopus: "57217308219",
 };
+
+export const refresherData = [
+  {
+    title: "Guru Dakshata Faculty Induction Programme (A+ Grade)",
+    institution: "Coimbatore Institute of Technology, under the UGC Malaviya Mission Teacher Training Programme (MM-TTP)",
+    year: "2026",
+  },
+  {
+    title: "Indian Knowledge Tradition, Ethics and Values: Relevance and Implications for Higher Education",
+    institution: "UGC Malaviya Mission Teacher Training Centre (MMTTC), Assam University",
+    year: "2026",
+  },
+  {
+    title: "Geospatial Practices in Ancient Indian Knowledge Systems",
+    institution: "Banaras Hindu University & SWAYAM INI",
+    year: "2025",
+  },
+  {
+    title: "Handling Large-Scale Unit Level Data",
+    institution: "IIT Roorkee & SWAYAM NPTEL",
+    year: "2024",
+  },
+  {
+    title: "NEP 2020 Orientation & Sensitization Programme",
+    institution: "UGC Malaviya Mission Teacher Training Programme (MM-TTP), The University of Burdwan",
+    year: "2024",
+  },
+];
+
+export const invitedLecturesData = [
+  {
+    title: "Invited Lecture Series on Remote Sensing",
+    institution: "Malda College",
+    date: "15–17 June 2026",
+    desc: "Delivered a three-day invited lecture series covering remote sensing principles, electromagnetic radiation, satellite systems, and their applications in geospatial science."
+  }
+];
+
+export const ongoingResearchData = [
+  {
+    title: "When seasons matter more than trends: Urban air quality anomalies and pollution extremes across major urban centres of Northeast India (2022–2024)",
+    status: "Under Review"
+  },
+  {
+    title: "Geographies of Gendered Time Allocation and Development Outcomes: Unpaid Work, Time Poverty, and Spatial Inequalities in India",
+    status: "Under Review"
+  },
+  {
+    title: "Technological Transformation of Ecotourism in the Global South: From GIS-Based Planning to Smart Tourism Platforms (1997–2025)",
+    status: "Under Review"
+  },
+  {
+    title: "Spatial and Social Determinants of Safe Sex Behaviour among Women in India: Reassessing the Role of Women’s Empowerment",
+    status: "Under Review"
+  },
+  {
+    title: "Citizen Satisfaction with Urban Open Spaces Based on Land Ownership and Place Quality in Medium Sized Indian City",
+    status: "Under Review"
+  },
+  {
+    title: "Climate Change, Disease Burden, and Health Equity: Mapping the Progress in Spatial Epidemiological Research (1995-2025)",
+    status: "Ongoing"
+  },
+  {
+    title: "Epistemic Core–Periphery Dynamics in Queer Geography: Uneven Geographies of Knowledge Production and Scholarly Influence (1995–2025)",
+    status: "Ongoing"
+  },
+  {
+    title: "Reframing Urban Air Quality through the Sustainable Cities Agenda: Global Research Trajectories since the Adoption of the SDGs (2016–2025)",
+    status: "Ongoing"
+  },
+  {
+    title: "Unravelling AQI Variability via Multi-Pollutant Interactions, Lagged Effects, and Nonlinear Modelling: Insights from Guwahati, India",
+    status: "Ongoing"
+  },
+  {
+    title: "Mobility Justice and Transport Inequality: A Global Bibliometric Analysis of Research Trends",
+    status: "Ongoing"
+  }
+];

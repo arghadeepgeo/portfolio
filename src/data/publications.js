@@ -1,6 +1,7 @@
 export const journalArticles = [
   {
     id: 24,
+    link: "https://doi.org/10.1016/j.apr.2023.101976",
     year: 2024,
     shortYear: "'24",
     authors: [{ name: "Bose, A.", bold: true }, { name: "Chowdhury, I. R." }],
@@ -15,6 +16,7 @@ export const journalArticles = [
   },
   {
     id: 23,
+    link: "https://doi.org/10.1016/j.apgeog.2024.103267",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -33,6 +35,7 @@ export const journalArticles = [
   },
   {
     id: 22,
+    link: "https://doi.org/10.1111/sjtg.12533",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -51,6 +54,7 @@ export const journalArticles = [
   },
   {
     id: 21,
+    link: "https://doi.org/10.1080/19475683.2024.2304194",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -69,6 +73,7 @@ export const journalArticles = [
   },
   {
     id: 20,
+    link: "https://doi.org/10.1016/j.socimp.2024.100049",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -87,6 +92,7 @@ export const journalArticles = [
   },
   {
     id: 19,
+    link: "https://doi.org/10.1007/s10668-023-03456-x",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -105,6 +111,7 @@ export const journalArticles = [
   },
   {
     id: 18,
+    link: "https://doi.org/10.1080/14498596.2023.2267011",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -123,6 +130,7 @@ export const journalArticles = [
   },
   {
     id: 17,
+    link: "https://doi.org/10.1016/j.rspp.2024.100040",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -141,6 +149,7 @@ export const journalArticles = [
   },
   {
     id: 16,
+    link: "https://link.springer.com/article/10.1007/s40808-022-01670-6",
     year: 2023,
     shortYear: "'23",
     authors: [{ name: "Bose, A.", bold: true }, { name: "Roy Chowdhury, I." }],
@@ -155,6 +164,7 @@ export const journalArticles = [
   },
   {
     id: 15,
+    link: "https://doi.org/10.1016/j.socimp.2023.100026",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -174,6 +184,7 @@ export const journalArticles = [
   },
   {
     id: 14,
+    link: "https://doi.org/10.3390/su15129788",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -194,6 +205,7 @@ export const journalArticles = [
   },
   {
     id: 13,
+    link: "https://doi.org/10.1016/j.scs.2023.104692",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -212,6 +224,7 @@ export const journalArticles = [
   },
   {
     id: 12,
+    link: "https://link.springer.com/article/10.1007/s10708-022-10753-x",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -229,6 +242,7 @@ export const journalArticles = [
   },
   {
     id: 11,
+    link: "https://doi.org/10.1080/23754931.2023.2225541",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -247,6 +261,7 @@ export const journalArticles = [
   },
   {
     id: 10,
+    link: "https://link.springer.com/article/10.1007/s10668-022-02360-0",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -266,6 +281,7 @@ export const journalArticles = [
   },
   {
     id: 9,
+    link: "https://link.springer.com/article/10.1007/s10661-022-10722-4",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -284,6 +300,7 @@ export const journalArticles = [
   },
   {
     id: 8,
+    link: "https://doi.org/10.1111/rsp3.12607",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -302,6 +319,7 @@ export const journalArticles = [
   },
   {
     id: 7,
+    link: "https://doi.org/10.1080/10106049.2022.2153932",
     year: 2022,
     shortYear: "'22",
     authors: [
@@ -322,6 +340,7 @@ export const journalArticles = [
   },
   {
     id: 6,
+    link: "https://www.mdpi.com/2071-1050/13/19/10805",
     year: 2021,
     shortYear: "'21",
     authors: [
@@ -344,6 +363,7 @@ export const journalArticles = [
   },
   {
     id: 5,
+    link: "https://doi.org/10.1016/j.crsust.2021.100098",
     year: 2021,
     shortYear: "'21",
     authors: [
@@ -364,6 +384,7 @@ export const journalArticles = [
   },
   {
     id: 4,
+    link: "https://doi.org/10.1016/j.envc.2021.100194",
     year: 2021,
     shortYear: "'21",
     authors: [
@@ -383,6 +404,7 @@ export const journalArticles = [
   },
   {
     id: 3,
+    link: "https://link.springer.com/article/10.1007/s12517-021-07324-8",
     year: 2021,
     shortYear: "'21",
     authors: [
@@ -400,6 +422,7 @@ export const journalArticles = [
   },
   {
     id: 2,
+    link: "https://link.springer.com/article/10.1007/s40808-020-00842-6",
     year: 2020,
     shortYear: "'20",
     authors: [{ name: "Bose, A.", bold: true }, { name: "Chowdhury, I. R." }],
@@ -417,6 +440,7 @@ export const journalArticles = [
 export const bookChapters = [
   {
     id: 6,
+    link: "https://www.taylorfrancis.com/chapters/edit/10.4324/9781003509400-17/factors-determining-health-status-among-elderly-urban-slums-indrajit-roy-chowdhury-subham-roy-arghadeep-bose-subham-mustafi",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -436,6 +460,7 @@ export const bookChapters = [
   },
   {
     id: 5,
+    link: "https://www.taylorfrancis.com/chapters/edit/10.4324/9781003509400-20/identifying-urban-green-space-availability-using-geospatial-techniques-rapidly-expanding-city-siliguri-india-indrajit-roy-chowdhury-subham-mustafi-arghadeep-bose-subham-roy-debanjan-basak",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -456,6 +481,7 @@ export const bookChapters = [
   },
   {
     id: 4,
+    link: "https://www.springerprofessional.de/en/exploring-the-spatial-fabric-of-urban-well-being-through-geograp/27148314",
     year: 2024,
     shortYear: "'24",
     authors: [
@@ -476,6 +502,7 @@ export const bookChapters = [
   },
   {
     id: 3,
+    link: "https://doi.org/10.1016/B978-0-323-91880-0.00014-3",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -495,6 +522,7 @@ export const bookChapters = [
   },
   {
     id: 2,
+    link: "https://link.springer.com/chapter/10.1007/978-3-031-25914-2_11",
     year: 2023,
     shortYear: "'23",
     authors: [
@@ -537,8 +565,8 @@ export const allPublications = [...journalArticles, ...bookChapters];
 export const pubStats = {
   journalArticles: 24,
   bookChapters: 6,
-  citations: "1,938",
-  hIndex: 21,
+  citations: "2,018",
+  hIndex: 22,
   i10Index: 25,
   total: 30,
 };

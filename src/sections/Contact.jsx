@@ -17,7 +17,7 @@ function ContactRow({ dt, children }) {
       alignItems: 'baseline',
     }}>
       <dt style={{ fontFamily: 'var(--font-mono)', fontSize: '9.5px', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'oklch(75% 0.05 80)' }}>{dt}</dt>
-      <dd style={{ margin: 0, fontFamily: 'var(--font-serif)', fontSize: 17, fontVariationSettings: '"SOFT" 30' }}>{children}</dd>
+      <dd style={{ margin: 0, fontFamily: 'var(--font-serif)', fontSize: 'var(--fs-body)', fontVariationSettings: '"SOFT" 30' }}>{children}</dd>
     </div>
   )
 }
@@ -37,7 +37,7 @@ export default function Contact() {
       <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'end' }}>
         <div className="contact-left">
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: '10.5px', letterSpacing: '0.2em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 18 }}>
-            - 06 / Correspondence
+            - 09 / Correspondence
           </div>
           <h2 style={{
             fontFamily: 'var(--font-serif)', fontWeight: 350,
@@ -47,7 +47,7 @@ export default function Contact() {
           }}>
             Write a <span style={{ fontStyle: 'italic', color: 'var(--accent)', fontWeight: 300 }}>letter,</span> trace a route, ask a question.
           </h2>
-          <p style={{ marginTop: 24, maxWidth: 540, fontSize: 18, lineHeight: 1.55, color: 'var(--ink-2)' }}>
+          <p style={{ marginTop: 24, maxWidth: 540, fontSize: 'var(--fs-body-lg)', lineHeight: 1.55, color: 'var(--ink-2)' }}>
             Open to research collaborations in urban analytics, air-quality modelling and Himalayan sustainability. Available for guest lectures, doctoral committees and editorial review.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function Contact() {
             </ContactRow>
             <div style={{ borderBottom: 0, display: 'grid', gridTemplateColumns: '110px 1fr', gap: 16, padding: '16px 0', alignItems: 'baseline' }}>
               <dt style={{ fontFamily: 'var(--font-mono)', fontSize: '9.5px', letterSpacing: '0.16em', textTransform: 'uppercase', color: 'oklch(75% 0.05 80)' }}>CV</dt>
-              <dd style={{ margin: 0, fontFamily: 'var(--font-serif)', fontSize: 17 }}>
+              <dd style={{ margin: 0, fontFamily: 'var(--font-serif)', fontSize: 'var(--fs-body)' }}>
                 <a href={`${BASE}Arghadeep-Bose-CV.pdf`} download style={{ color: 'inherit', textDecoration: 'none', borderBottom: '1px dotted oklch(75% 0.05 80)' }}>
                   ↓ Download PDF
                 </a>

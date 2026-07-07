@@ -8,7 +8,10 @@ import MarqueeBand from '../sections/MarqueeBand'
 import About from '../sections/About'
 import Research from '../sections/Research'
 import PublicationsPreview from '../sections/PublicationsPreview'
+import OngoingResearch from '../sections/OngoingResearch'
 import Teaching from '../sections/Teaching'
+import RefresherFDP from '../sections/RefresherFDP'
+import InvitedLectures from '../sections/InvitedLectures'
 import Awards from '../sections/Awards'
 import Contact from '../sections/Contact'
 
@@ -40,7 +43,10 @@ export default function PortfolioPage() {
         <About />
         <Research />
         <PublicationsPreview />
+        <OngoingResearch />
         <Teaching />
+        <RefresherFDP />
+        <InvitedLectures />
         <Awards />
         <Contact />
       </main>

@@ -23,6 +23,17 @@
   --contact-card-bg: var(--ink);
   --contact-card-text: var(--paper);
   --about-aside-bg: var(--paper-2);
+
+  /* Typography Scale Variables */
+  --fs-body: 16px;
+  --fs-body-lg: 18.5px;
+  --fs-tagline: 17px;
+  --fs-detail: 13.5px;
+  --fs-title-sm: 12.5px;
+  --fs-title-md: 19px;
+  --fs-title-lg: 22px;
+  --fs-title-xl: 26px;
+  --fs-kpi-val: 36px;
 }
 
 /* ==========================================
@@ -141,7 +152,11 @@ body {
    ========================================== */
 .nav {
   position: fixed;
-  top: 18px; left: 18px; right: 18px;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 36px);
+  max-width: 1560px;
   z-index: 60;
   display: flex; align-items: center; justify-content: space-between;
   padding: 14px 22px;
@@ -281,6 +296,9 @@ body {
   position: relative;
   z-index: 5;
   padding: 0 60px;
+  max-width: 1560px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* ==========================================
@@ -521,11 +539,17 @@ body {
 .site-footer {
   border-top: 1px solid var(--ink);
   padding: 28px 60px 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.site-footer-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  position: relative;
-  z-index: 5;
   font-family: var(--font-mono);
   font-size: 10px;
   letter-spacing: 0.16em;
@@ -638,7 +662,13 @@ body {
   /* Nav */
   .nav-hamburger { display: flex; }
   .nav-coords { display: none; }
-  .nav { left: 12px; right: 12px; padding: 12px 16px; }
+  .nav {
+    left: 12px;
+    right: 12px;
+    transform: none;
+    width: auto;
+    padding: 12px 16px;
+  }
   .nav-links { display: none; }
 
   /* Layout */
@@ -650,6 +680,8 @@ body {
   /* Footer */
   .site-footer {
     padding: 28px 32px;
+  }
+  .site-footer-inner {
     flex-direction: column;
     gap: 18px;
     align-items: flex-start;
@@ -729,7 +761,13 @@ body {
    ========================================== */
 @media (max-width: 600px) {
   .main-content { padding: 0 20px; }
-  .nav { left: 6px; right: 6px; top: 6px; }
+  .nav {
+    left: 6px;
+    right: 6px;
+    top: 6px;
+    transform: none;
+    width: auto;
+  }
   .page-frame { inset: 6px; }
   .section-base { padding: 50px 0; }
 
@@ -745,4 +783,35 @@ body {
 
   /* Search box full width */
   .search-box { width: 100%; }
+}
+
+/* ==========================================
+   RESPONSIVE — LARGE RESOLUTION SCALING
+   ========================================== */
+@media (min-width: 1600px) {
+  :root {
+    --fs-body: 18px;
+    --fs-body-lg: 21px;
+    --fs-tagline: 19px;
+    --fs-detail: 15px;
+    --fs-title-sm: 14px;
+    --fs-title-md: 21.5px;
+    --fs-title-lg: 25px;
+    --fs-title-xl: 30px;
+    --fs-kpi-val: 42px;
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --fs-body: 20px;
+    --fs-body-lg: 23px;
+    --fs-tagline: 21.5px;
+    --fs-detail: 16.5px;
+    --fs-title-sm: 15.5px;
+    --fs-title-md: 24px;
+    --fs-title-lg: 28px;
+    --fs-title-xl: 34px;
+    --fs-kpi-val: 48px;
+  }
 }

@@ -21,7 +21,7 @@ export default function Teaching() {
     <section id="teaching" ref={section} className="section-base">
       <div className="sec-head">
         <div className="label">
-          <span className="num" style={{ fontFamily: 'var(--font-serif)', fontSize: 36, fontWeight: 300, color: 'var(--ink)', letterSpacing: 0, fontVariationSettings: '"SOFT" 50' }}>04</span>
+          <span className="num" style={{ fontFamily: 'var(--font-serif)', fontSize: 36, fontWeight: 300, color: 'var(--ink)', letterSpacing: 0, fontVariationSettings: '"SOFT" 50' }}>05</span>
           Teaching &amp; Fieldwork
         </div>
         <h2>Classrooms in <span className="it">two states,</span> field notebooks across eight.</h2>
@@ -49,10 +49,10 @@ export default function Teaching() {
                   {a.period}
                 </div>
                 <div>
-                  <h4 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 22, margin: '0 0 4px', lineHeight: 1.15, fontVariationSettings: '"SOFT" 30' }}>
+                  <h4 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 'var(--fs-title-lg)', margin: '0 0 4px', lineHeight: 1.15, fontVariationSettings: '"SOFT" 30' }}>
                     {a.title} <span style={{ fontStyle: 'italic', color: 'var(--muted)', fontWeight: 300 }}>{a.subtitle}</span>
                   </h4>
-                  <p style={{ margin: '4px 0 0', fontSize: '13.5px', color: 'var(--muted)', fontFamily: 'var(--font-sans)', lineHeight: 1.5 }}>
+                  <p style={{ margin: '4px 0 0', fontSize: 'var(--fs-detail)', color: 'var(--muted)', fontFamily: 'var(--font-sans)', lineHeight: 1.5 }}>
                     {a.desc}
                   </p>
                 </div>
@@ -63,7 +63,7 @@ export default function Teaching() {
           <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.18em', color: 'var(--accent)', textTransform: 'uppercase', margin: '40px 0 14px' }}>
             Toolkit
           </h3>
-          <p style={{ fontFamily: 'var(--font-sans)', fontSize: 14, lineHeight: 1.7, color: 'var(--ink-2)', maxWidth: 560 }}>
+          <p style={{ fontFamily: 'var(--font-sans)', fontSize: 'var(--fs-body)', lineHeight: 1.7, color: 'var(--ink-2)', maxWidth: 560 }}>
             {teachingData.toolkit}
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function Teaching() {
             Field Sites · 2015 - 25
           </h3>
           <FieldMap />
-          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '13.5px', color: 'var(--muted)', marginTop: 18, lineHeight: 1.55 }}>
+          <p style={{ fontFamily: 'var(--font-sans)', fontSize: 'var(--fs-detail)', color: 'var(--muted)', marginTop: 18, lineHeight: 1.55 }}>
             From the high-altitude homestays of Pelling and Tinchuley to the coastal industries of Vizag and the heritage circuits of Rajgir - a decade of fieldwork across eight Indian states.
           </p>
         </div>
